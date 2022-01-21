@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SneakersNL</title>
+    <link rel="stylesheet" href="./style.css">
+    <button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
+    
+
+  <script>
+    //Get the button:
+mybutton = document.getElementById("myBtn");
+
+// When the user scrolls down 20px from the top of the document, show the button
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+    mybutton.style.display = "block";
+  } else {
+    mybutton.style.display = "none";
+  }
+}
+
+// When the user clicks on the button, scroll to the top of the document
+function topFunction() {
+  document.body.scrollTop = 0; // For Safari
+  document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+}
+  </script>
+
+</head>
+<body>
+    <nav>
+        <ul>
+          <li><a href="#Releases">Releases</a></li>
+          <li><a href="#Info">Info</a></li>
+          <li><a href="#Contact">Contact</a></li>
+        </ul>
+      </nav>
+      <section id="Releases"><div>
+        <h1>Releases</h1>
+        <a href="https://www.nike.com/nl/en/launch/t/air-jordan-1-dark-marina-blue-emea">
+          <img src="./upcoming sneaker images/1.png">
+        </a>
+        <p>Jordan 1 marina blue</p>
+        <a href="https://www.nike.com/nl/en/launch/t/womens-air-jordan-1-atmosphere">
+          <img src="./upcoming sneaker images/2.png">
+        </a>
+        <p>Jordan 1 atmopshere</p>
+        <a href="https://www.nike.com/nl/en/launch/t/air-jordan-6-low-cny">
+          <img src="./upcoming sneaker images/3.png">
+        </a>
+        <p>Air Jordan 6 Retro Low Chinese New Year</p>
+        
+      <section id="Info">
+        <h1>websites</h1>
+        <table>
+          <a href="https://www.nike.com/nl/en/launch?s=upcoming">Nike</a>
+          <a href="https://www.nike.com/jordan">Jordan</a>
+          <a href="https://www.adidas.nl/yeezy">Yeezy</a>
+          <a href="https://www.off---white.com/en-nl/">Off white</a>
+          </table>
+
+      <section id="Contact"><form action="https://formsubmit.co/tygovonder@gmail.com" method="POST">
+        <input type="hidden" name="_subject" value="New Email wooo!">
+        <input type="email" name="email" placeholder="Email Address" required>  
+        <input type="hidden" name="_next" value="https://sneakersnl.000webhostapp.com/thanks.html"> 
+        <input type="text" name="name" placeholder="bericht" required>
+        <button type="submit">Send</button>
+   </form>
+</body>
+<footer>
+  
+</footer>
+
+</html>
